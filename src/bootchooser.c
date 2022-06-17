@@ -23,7 +23,7 @@ GQuark r_bootchooser_error_quark(void)
 #define UBOOT_DEFAULT_ATTEMPTS  3
 #define UBOOT_ATTEMPTS_PRIMARY  3
 #define EFIBOOTMGR_NAME "efibootmgr"
-#define GRUB_EDITENV "grub-editenv"
+#define GRUB_EDITENV "grub-editenv /boot/EFI/BOOT/grubenv"
 
 static const gchar *supported_bootloaders[] = {"barebox", "grub", "uboot", "efi", "custom", "noop", NULL};
 
